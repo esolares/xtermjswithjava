@@ -1,7 +1,7 @@
 FROM node:buster
 
 RUN apt-get update && apt-get upgrade -y
-RUN apt-get install -y emacs-nox vim tmux curl wget nano git default-jdk openssh-client python3 python-is-python3
+RUN apt-get install -y emacs-nox vim tmux curl wget nano git default-jdk openssh-client python3
 COPY src /xterm
 
 WORKDIR /xterm
